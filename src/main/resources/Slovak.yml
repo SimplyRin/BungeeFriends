@@ -1,0 +1,225 @@
+---
+#Translator: @SimplyRin_
+#Language: English
+Language: Slovak
+#Please input the language of your country.
+#For example, in the case of Japanese, it is 日本語.
+#in the case of Chinese, it is 中文.
+DisplayLanguage: YOUR_LANGUAGE
+Ingame_Only: "&cTento príkaz je dostupný len v hre."
+No_Permission: "&cK tomuto príkazu nemáš práva!"
+Hyphen: "&9&m---------------------------------------------"
+#Exceptions
+Exceptions:
+  AlreadySent: "&cUž si poslal žiadosť o priateľstvo tejto osobe!"
+  AlreadyFriend: "&cUž ste priatelia s danou osobou!"
+  Ignored: "&cTento hráč si ťa pridal do jeho ignorovacieho zoznamu!"
+  IsntOnYourFriends: "&c%targetDisplayName &cnení v zozname tvojich priateľov!"
+  CantAddYourSelf: "&cNemôžeš si pridať sám seba za priateľa!"
+  CantRemoveYourself: "&cNemôžeš si sám seba odobrať!"
+  NoInvited: "&cTáto osoba ťa nepozvala aby ste boli priatelia! Skus &e/friend add %name"
+  HasntFriend: "&cTáto osoba ťa nepozvala aby ste boli priatelia! Skus &e/friend add %name"
+  SlotLimitReached: "&cDosiahli ste maxmálny počet priateľov! Pre priadanie dalších priateľov prosím odstráň niekoho!"
+  RequestDeny: "&cTento hráč si vypol žiadosti o priateľstvo!"
+  Not-Joined: "&cYou are not joined the party!"
+  Cant-Invite-Self: "&cYou can't invite yourself to a party!"
+  Disable-Invite: "%targetDisplayName &chas turned off party invitation acceptance."
+  Already:
+    In: "%targetDisplayName &cis already in your party!"
+    Joined: "&cThis player is already joined the party!"
+    Invited: "&cYou have already invited %targetDisplayName&c!"
+  Havent-Received-Invite: "&cYou haven't been invited to a party, or the invitation has expired!"
+  Your-Self-Invite: "&cYou can't add yourself to a party!"
+  Cant-Remove-Your-Self: "&cYou can't remove yourself! Use /party disaband instead!"
+  Isnt-In-Your-Party: "%targetDisplayName &cisn't in your party! Invite them first!"
+#Commands
+No-Joined-The-Party: "&cMusíš byť v party aby si mohol použiť tento príkaz!"
+Cant-Find: "&cNedá sa najsť hráč menom '%name'"
+Friends:
+  Join: "&8[&a+&8] &7%%displayName%% &esa pripojil."
+  Quit: "&8[&c-&8] &7%%displayName%% &esa odpojil."
+  Server-Move: "&8[&6@&8] &7%%displayName%% &emoved to &a%%server%%&e."
+Add:
+  Usage: "&cPouži: /friend add <hráč>"
+  Sent: "&ePoslal si žiadosť o priateľstvo %targetDisplayName&e!"
+  5-Minutes: "&eOni majú 5 minút na prijatie!"
+  Accept:
+    Prefix: "&a&l[PRIJAT]&r"
+    Message: "&bKlikni pre prijatie žiadosti o priateľstvo"
+  Deny:
+    Prefix: "&c&l[ODMIETNUT]&r"
+    Message: "&bKlikni pre odmietnutie žiadosťi o priateľstvo"
+  Ignore:
+    Prefix: "&7&l[IGNOROVAT]"
+    Message: "&bClick to block all future friend requests."
+  Request:
+    Received: "&eFriend request from %displayName&e!"
+  Expired:
+    YourSelf: "&eYour friend request to %targetDisplayName &ehas expired."
+    Target: "&eThe friend request from %displayName &ehas expired."
+Remove:
+  Usage: "&cUsage: /friend remove <player>"
+  YourSelf: "&eYou removed %targetDisplayName &efrom your friends list!"
+  Target: "&e%displayName &eremoved you from their friends list!"
+  All:
+    Confirm: "&eAre you sure you want to delete all your friends? To delete it, enter &c'/f removeall confirm'&e."
+    Failed: "&eFailed removing: %uuid"
+    Done: "&eDeleted all my friends."
+Accept:
+  Usage: "&cUsage: /friend accept <player>"
+  YourSelf: "&aYou are now friends with %targetDisplayName"
+  Target: "&aYou are now friends with %displayName"
+Deny:
+  Usage: "&cUsage: /friend deny <player>"
+  Declined: "&eDeclined %targetDisplayName&e's friend request!"
+List:
+  DontHave:
+    One: "&eYou don't have any friends yet!"
+    Two: "&eAdd some with /friend add <player>"
+  Online: "&e%targetDisplayName &eis in a %server Server."
+  Offline: "&e%targetDisplayName &cis currently offline"
+  Page: "&6Friends (Page %%currentPage%% of %%maxPage%%)"
+  Party-List: "&aParty members (%size):"
+Lang:
+  Usage: "&cInvalid usage! '/friend lang <language>'"
+  Available: "&bCurrently available languages:"
+  Update: "&aSelected language: &e%lang&a!"
+  Updater:
+    LastUpdate: "&aLast update: %data"
+    Usage: "&cInvalid usage! '/friend lang update <language>'"
+    NeedCheck: "&cYou need check available languages list! (/friend lang update)"
+    Checking: "&7Pozeranie aktualizácii..."
+    Failed-Connect: "&cFailed connecting to the server."
+    Unknown: "&cThis language is not found."
+    Available: "&aAvailable files:"
+    Updated: "&a%lang language has been updated! You may need to restart the server."
+Ignore:
+  Usage:
+    Main: "&cInvalid usage! '/friend ignore <add|remove|list>'"
+    Add: "&cInvalid usage! '/friend ignore add <player>'"
+    Remove: "&cInvalid usage! '/friend ignore add <player>'"
+  Havent:
+    One: "&eYou don't have any ignores yet!"
+    Two: "&eAdd some with /friend ignore add <player>"
+  Added: "&aAdded %targetDisplayName &ato your ignore list."
+  AlreadyAdded: "&cYou've already ignored that player! &b/ignore remove Player &cto unignore them!"
+  Removed: "&aRemoved %targetDisplayName &afrom your ignore list."
+  NotAdded: "&cYou aren't ignoring that player! &b/ignore add Player &cto ignore!"
+Force-Add:
+  Usage: "&cUsage: /friend force-add <player>"
+  YourSelf: "&aYou are now friends with %targetDisplayName &c&l[FORCE]"
+  Target: "&aYou are now friends with %displayName &c&l[FORCE]"
+Prefix:
+  Usage: "&cUsage: /friend prefix <player> <prefix>"
+  Current: "&7%targetDisplayName&e's currently prefix is '%prefix&e'"
+  To: "&7%targetDisplayName&e's prefix has been changed to '%prefix&e'"
+Toggle:
+  Enabled: "&eŽiadosti o priateľstvo: &aZapnuté"
+  Disabled: "&eŽiadosti o priateľstvi: &cVypnuté"
+Reload:
+  Usage: "&cUsage: /friend reload <all|config|lang>"
+  Config: "&aReloaded config.yml file."
+  Prefix: "&aReloaded prefix.yml file."
+  AliasCommand: "&aReconfigured alias command."
+  Lang: "&aReloaded language files."
+Help:
+  Command: "&ePriateľské príkazy:"
+  Help: "&e/friend help &7- &bPošle všetky príkazy"
+  Lang: "&e/friend lang &7- &bZmení zobrazovaný jazyk"
+  Add: "&e/friend add &7- &bPridáte si hráča za priateľa"
+  Remove: "&e/friend remove &7- &bOdstránite si hráča z tvojich priateľov"
+  RemoveAll: "&e/friend removeall &7- &bRemove all your friends."
+  Accept: "&e/friend accept &7- &bPríjmete žiadosť o priateľstvo"
+  Deny: "&e/friend deny &7- &bOdmietnete žiadosť o priateľstvo"
+  List: "&e/friend list &7- &bList vaších priateľov"
+  Ignore: "&e/friend ignore &7- &bSpravíš svôj ignorovací zoznam"
+  Force-Add: "&e/friend force-add &7- &bBudeš nútený sa priateliť s tímto hráčom."
+  Prefix: "&e/friend prefix &7- &bNastavíš hráčov prefix."
+  Toggle: "&e/friend toggle &7- &bZapneš žiadosti o priateľstvo."
+  Reload: "&e/friend reload &7- &bReload the config file."
+#Tell Command
+Tell-Command:
+  Usage: "&cPouži: /tell <hráč> <správa>"
+  YourSelf: "&dPre: %targetDisplayName&7: %message"
+  Target: "&dOd: %displayName&7: %message"
+  MustBeFriends: "&cMusíš byť priateľ s %targetDisplayName!"
+  Offline: "&c%targetDisplayName &cnení online!"
+  CantSend: "&cYou can't send a message to yourself!"
+#Reply Command
+Reply-Command:
+  Usage: "&cPouži: /reply <správa>"
+  Target: "&cOdpovedaj: %targetDisplayName"
+Chat:
+  Usage: "&cUsage: /chat <default|party>"
+  ChatUsage: "&cUsage: /partychat <message>"
+  Update: "&aYou are now in the %CHANNEL% &achannel"
+  NeedInAParty: "&cYou need to be in a party to chat."
+  Channels:
+    All: "&6All"
+    Party: "&6Party"
+Invite:
+  Usage: "&cInvalid usage! '/party invite <player>'"
+  All-Left: "&eThe party was disbanded because all invites have expired and all members have left."
+  Request:
+    Sent:
+      Invited: "%displayName &einvited %targetDisplayName &eto the party!"
+      60-Seconds: "&eThey have 60 seconds to accept it!"
+    Click-here:
+      Here: "&6Click here "
+      Accept: "&eto join! You have 60 seconds to accept."
+      Command: "Click to run\n/party accept %name"
+      Receive: "%displayName &ehas invited you to join their party!"
+    Expired:
+      Your-Self: "&eThe party invite to %targetDisplayName &ehas expired."
+      Target: "&eThe party invite from %displayName &ehas expired."
+Leave:
+  You-Left: "&aYou left the party!"
+  Player-Left: "%displayName &eleft the party."
+  NeedDisband: "&cThe party leader needs to disband the party!"
+Remove-Party:  #and Kick
+  Usage: "&cInvalid usage! '/party remove <player>'"
+  Member-Removed: "%targetDisplayName &ahas been removed from your party!"
+  Me-Removed: "&eYou have been kicked from the party by %displayName&e!"
+KickOffline:
+  AllOnline: "&cThere are no offline players to remove."
+Warp:
+  Summon: "&eThe party leader %displayName &esummoned you to their server."
+  Sending: "&aSending you to %server%&a."
+Accept-Party:
+  Usage: "&cInvalid usage! '/party accept <player>'"
+  You-Joined: "&aYou joined %targetDisplayName&a's party!"
+  Joined: "%displayName &ajoined the party!"
+Toggle-Party:
+  Disabled: "&eParty invitation acceptance has been &cDisabled&e."
+  Enabled: "&eParty invitation acceptance has been &aEnabled&e."
+Disband:
+  Must-Leader: "&cYou must be the Party Leader to use that command!"
+  Disbanded: "%displayName &ehas disbanded the party!"
+Promote:
+  Usage: "&cInvalid usage! '/party promote <player>'"
+  Promoted: "%displayName &ehas promoted %targetDisplayName &eto party leader!"
+Hijack:
+  Usage: "&cInvalid usage! /party hijack <player>"
+  PlayerNotJoined: "&cThis player has no party."
+  You: "&cYou hijacked the party."
+  Other: "%displayName &chas hijacked the party!"
+Logout:
+  One: "%displayName &ehas logged out the server."
+  Two: "&eAfter five minutes, random players will be promoted."
+  Become: "%displayName &ehas become the party leader."
+Help-Party:
+  Command: "&aParty Commands:"
+  Help: "&e/party help &7- &bPrints this help message"
+  Lang: "&e/party lang &7- &bChange the displayed language"
+  Chat: "&e/party chat &7- &bSend the message to the party member"
+  Invite: "&e/party invite &7- &bInvites the player to your party"
+  Leave: "&e/party leave &7- &bLeaves the current party"
+  List: "&e/party list &7- &bLists the members of your party"
+  Remove: "&e/party remove &7- &bRemove the player from the party"
+  Warp: "&e/party warp &7- &bTeleport the members of your party to your server"
+  Accept: "&e/party accept &7- &bAccept a party invite from the player"
+  Toggle: "&e/party toggle &7- &bToggle acceptance of invitation."
+  Disband: "&e/party disband &7- &bDisbands the party"
+  Promote: "&e/party promote &7- &bPromote party leader"
+  KickOffline: "&e/party kickoffline &7- &bKick offline player(s)."
+  Hijack: "&e/party hijack &7- &bHijack the party"

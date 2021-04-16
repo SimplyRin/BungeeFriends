@@ -1,0 +1,225 @@
+---
+#Translator: @SimplyRin_
+#Language: English
+Language: Arabic
+#Please input the language of your country.
+#For example, in the case of Japanese, it is 日本語.
+#in the case of Chinese, it is 中文.
+DisplayLanguage: YOUR_LANGUAGE
+Ingame_Only: "&cهذا الأمر متاح فقط في داخل اللعبة."
+No_Permission: "&c!ليس لديك الصلاحية للوصول الى هذا الأمر"
+Hyphen: "&9&m---------------------------------------------\n"
+#Exceptions
+Exceptions:
+  AlreadySent: "&c!لقد أرسلت طلب صداقة الى هذا الشخص بالفعل"
+  AlreadyFriend: "&c!أنت صديق مع هذا الشخص بالفعل"
+  Ignored: "&cلقد أضافك هذا الشخص الى قائمة التجاهل لديه!"
+  IsntOnYourFriends: "&c%targetDisplayName &cليس في قائمة أصدقائك!"
+  CantAddYourSelf: "&cلا يمكنك أضافة نفسك كصديق!"
+  CantRemoveYourself: "&c لا يمكنك حذف نفسك"
+  NoInvited: "&cلم يدعوك هذا الشخص لتكونون أصدقاء! جرب &e/friends add %name"
+  HasntFriend: "&cلم يدعوك هذا الشخص لتكونون أصدقاء! جرب &e/friends add %name"
+  SlotLimitReached: "&cلقد وصلت الى عدد الأصدقاء المحدود ! لأضافة المزيد من الأصدقاء يرجى حذف البعض من أصدقائك!"
+  RequestDeny: "&cهذا اللاعب قام بتعطيل إيصال طلب الصداقة!"
+  Not-Joined: "&cانت لست في المجموعة!"
+  Cant-Invite-Self: "&cلا يمكنك دعوة نفسك الى مجموعتك!"
+  Disable-Invite: "%targetDisplayName &cأوقف طلب الأضافة الى المجموعة."
+  Already:
+    In: "%targetDisplayName &c بالفعل في مجموعتك!"
+    Joined: "&cبالفعل قد دخل الى مجموعنك!"
+    Invited: "&cلقد قمت بالفعل بدعوة الى المجموعة %targetDisplayName&c!"
+  Havent-Received-Invite: "&cلم يتم دعوتك الى المجموعة, او نفذ وقت الدعوة!"
+  Your-Self-Invite: "&cلا يمكنك دعوة نفسك الى مجموعتك!"
+  Cant-Remove-Your-Self: "&cلا يمكنك حذف نفسك من مجموعتك! أستخدم /party disaband لحذف مجموعتك!"
+  Isnt-In-Your-Party: "%targetDisplayName &cليس في مجموعتك! قم بدعوته!"
+#Commands
+No-Joined-The-Party: "&cيجب ان تكون في مجموعة لأستخدام هذا الأمر!"
+Cant-Find: "&c لايمكن العثور على شخص في هذا الأسم! '%name'"
+Friends:
+  Join: "jh."
+  Quit: ". k."
+  Server-Move: "&8[&6@&8] &7%%displayName%% &تحرك الى &a%%server%%&e."
+Add:
+  Usage: "&cUsage: /friend add <أسم اللاعب>"
+  Sent: "&eلقد أرسلت طلب صداقة الى  %targetDisplayName&e!"
+  5-Minutes: "&eلديه 5 دقائق للموافقة على طلبك!"
+  Accept:
+    Prefix: "&a&l[قبول]&r"
+    Message: "&bأضغط هنا للموافقة على طلب الصداقة"
+  Deny:
+    Prefix: "&c&l[رفض]&r"
+    Message: "&bأضغط هنا لرفض طلب الصداقة"
+  Ignore:
+    Prefix: "&7&l[تجاهل]"
+    Message: "&bأضغط هنا لرفض جميع طلبات الصداقة المستقبلية."
+  Request:
+    Received: "&eطلب صداقة من %displayName&e!"
+  Expired:
+    YourSelf: "&eطلب صداقتك الى %targetDisplayName &e أنتهت مدته."
+    Target: "&eطلب الصداقة من %displayName &e أنتهت مدته."
+Remove:
+  Usage: "&cأستخدام خاطئ! '/party remove <أسم اللاعب>'"
+  YourSelf: "&eلقد حذفت %targetDisplayName &eمن قائمة أصدقائك!"
+  Target: "&e%displayName &eحذفك من قائمة أصدقائه!"
+  All:
+    Confirm: "&eAre you sure you want to delete all your friends? To delete it, enter &c'/f removeall confirm'&e."
+    Failed: "&eFailed removing: %uuid"
+    Done: "&eDeleted all my friends."
+Accept:
+  Usage: "&cأستخدام خاطئ! '/party accept <أسم اللاعب>'"
+  YourSelf: "&aأنت الأن صديق مع  %targetDisplayName"
+  Target: "&aأنت الأن صديق مع %displayName"
+Deny:
+  Usage: "&cUsage: /friend deny <أسم اللاعب>"
+  Declined: "&eرفض %targetDisplayName&e's طلب صداقتك!"
+List:
+  DontHave:
+    One: "&eYou don't have any friends yet!"
+    Two: "&eAdd some with /friend add <player>"
+  Online: "&e%targetDisplayName &eis in a %server Server."
+  Offline: "&e%targetDisplayName &cis currently offline"
+  Page: "&6Friends (Page %%currentPage%% of %%maxPage%%)"
+  Party-List: "&aقائمة أعضاء المجموعة (%size):"
+Lang:
+  Usage: "&cInvalid usage! '/party lang <اللغة>'"
+  Available: "&bاللغات المتوفرة حالياً:"
+  Update: "&aاللغة المختارة: &e%lang&a!"
+  Updater:
+    LastUpdate: "&aLast update: %data"
+    Usage: "&cInvalid usage! '/friend lang update <language>'"
+    NeedCheck: "&cYou need check available languages list! (/friend lang update)"
+    Checking: "&7Checking updates..."
+    Failed-Connect: "&cFailed connecting to the server."
+    Unknown: "&cThis language is not found."
+    Available: "&aAvailable files:"
+    Updated: "&a%lang language has been updated! You may need to restart the server."
+Ignore:
+  Usage:
+    Main: "&cأستخدام خاطئ! '/friend ignore <add|remove|list>'"
+    Add: "&cأستخدام خاطئ! '/friend ignore add <اسم اللاعب>'"
+    Remove: "&cأستخدام خاطئ! '/friend ignore add <اسم اللاعب>'"
+  Havent:
+    One: "&ليس لديك اي تجاهل!"
+    Two: "&eتجاهل شخص عن طريق كتابة /friend ignore add <أسم اللاعب>"
+  Added: "&aأضفت %targetDisplayName &aالى قائمة التجاهل."
+  AlreadyAdded: "&cلقد قمت بالفعل بتجاهل هذا اللاعب من قبل! &b/ignore remove Player &cحتى تقوم بألغاء التجاهل!"
+  Removed: "&aحذفت %targetDisplayName &aمن قائمة التجاهل."
+  NotAdded: "&cلم تقم بتجاهل هذا اللاعب! &b/ignore add أسم اللاعب &c حتى تقوم بتجاهله!"
+Force-Add:
+  Usage: "&cالأستخدام: /friend force-add <أسم اللاعب>"
+  YourSelf: "&aانت الأن صديق مع %targetDisplayName &c&l[أجباراً]"
+  Target: "&aأنت الأن صديق مع %displayName &c&l[أجبارا]"
+Prefix:
+  Usage: "&cالأستخدام: /friend prefix <اسم اللأعب> <الكنية>"
+  Current: "&7%targetDisplayName&e's كنيته الأن '%prefix&e'"
+  To: "&7%targetDisplayName&e's الكنية تغيرت الان الى '%prefix&e'"
+Toggle:
+  Enabled: "&eتم تفعيل طلبات الأنضمام &aEnabled&e."
+  Disabled: "&eتم أيقاف طلبات الأنضمام &cDisabled&e."
+Reload:
+  Usage: "&cUsage: /friend reload <all|config|lang>"
+  Config: "&aReloaded config.yml file."
+  Prefix: "&aReloaded prefix.yml file."
+  AliasCommand: "&aReconfigured alias command."
+  Lang: "&aReloaded language files."
+Help:
+  Command: "&aأوامر المجموعة:"
+  Help: "&e/party help &7- &bأوامر المساعدة"
+  Lang: "&e/party lang &7- &bتغيير اللغة"
+  Add: "&e/friend add &7- &bأضافة اللاعب كصديق"
+  Remove: "&e/party remove &7- &bأزالة اللاعب من المجموعة"
+  RemoveAll: "&e/friend removeall &7- &bRemove all your friends."
+  Accept: "&e/party accept &7- &bالموافقة على طلب الأنضمام "
+  Deny: "&e/friend deny &7- &bرفض طلب الصداقة"
+  List: "&e/party list &7- &bقائمة أعضاء المجموعة"
+  Ignore: "&e/friend ignore &7- &bالتحكم بقائمة التجاهل"
+  Force-Add: "&e/friend force-add &7- &bستكون صديق مع هذا الشخص ( أجباراً)."
+  Prefix: "&e/friend prefix &7- &bأضافة كنية لصديقك."
+  Toggle: "&e/party toggle &7- &bحالة الموافقة على طلبات الأنضمام."
+  Reload: "&e/friend reload &7- &bReload the config file."
+#Tell Command
+Tell-Command:
+  Usage: "&cالأستخدام: /tell <أسم اللاعب> <رسالتك>"
+  YourSelf: "&d الى : %targetDisplayName&7: %message"
+  Target: "&d من : %displayName&7: %message"
+  MustBeFriends: "&cيجب ان تكون صديق مع  %targetDisplayName!"
+  Offline: "&c%targetDisplayName &cليس متصل !"
+  CantSend: "&cYou can't send a message to yourself!"
+#Reply Command
+Reply-Command:
+  Usage: "&cUsage: /reply <رسالتك>"
+  Target: "&c رد الى : %targetDisplayName"
+Chat:
+  Usage: "&cInvalid usage! '/party chat <الرسالة>'"
+  ChatUsage: "&cUsage: /partychat <message>"
+  Update: "&aYou are now in the %CHANNEL% &achannel"
+  NeedInAParty: "&cYou need to be in a party to chat."
+  Channels:
+    All: "&6All"
+    Party: "&6Party"
+Invite:
+  Usage: "&cأستخدام خاطئ! '/party invite <أسم اللاعب>'"
+  All-Left: "&eتم حذف مجموعتك بسبب خروج جميع اللاعبين او نفاذ وقت الدعوات الى مجموعتك."
+  Request:
+    Sent:
+      Invited: "%displayName &eدعوت %targetDisplayName &eالى مجموعتك!"
+      60-Seconds: "&eلديه 60 ثانية للموافقة على الطلب!"
+    Click-here:
+      Here: "&6Click here "
+      Accept: "&eto join! You have 60 seconds to accept."
+      Command: "أضغط هنا run\n/party للموافقة على طلب %name"
+      Receive: "%displayName &eأرسل اليك دعوة للدخول الى مجموعته!"
+    Expired:
+      Your-Self: "&eالدعوة المرسلة الى %targetDisplayName &eقد أنتهت مدتها."
+      Target: "&eطلب الأنضمام الى مجموعة %displayName &eقد أنتهى."
+Leave:
+  You-Left: "&aلقد خرجت من المجموعة!"
+  Player-Left: "%displayName &eخرج من المجموعة."
+  NeedDisband: "&cThe party leader needs to disband the party!"
+Remove-Party:  #and Kick
+  Usage: "&cأستخدام خاطئ! '/party remove <أسم اللاعب>'"
+  Member-Removed: "%targetDisplayName &aتم حذفه من مجموعتك!"
+  Me-Removed: "&eتم حذفك من المجموعة من قبل %displayName&e!"
+KickOffline:
+  AllOnline: "&cThere are no offline players to remove."
+Warp:
+  Summon: "&eقائد المجموعة %displayName &eنقلك الى السيرفر الحالي."
+  Sending: "&aSending you to %server%&a."
+Accept-Party:
+  Usage: "&cأستخدام خاطئ! '/party accept <أسم اللاعب>'"
+  You-Joined: "&لقد أنضممت %targetDisplayName&a's الى مجموعة!"
+  Joined: "%displayName &a أنضم الى الفريق!"
+Toggle-Party:
+  Disabled: "&eParty invitation acceptance has been &cDisabled&e."
+  Enabled: "&eParty invitation acceptance has been &aEnabled&e."
+Disband:
+  Must-Leader: "&cيجب ان تكون قائد المجموعة لأستخدام هذا الأمر!"
+  Disbanded: "%displayName &eتم حذف المجموعة!"
+Promote:
+  Usage: "&cInvalid usage! '/party promote <player>'"
+  Promoted: "%displayName &ehas promoted %targetDisplayName &eto party leader!"
+Hijack:
+  Usage: "&cInvalid usage! /party hijack <player>"
+  PlayerNotJoined: "&cThis player has no party."
+  You: "&cYou hijacked the party."
+  Other: "%displayName &chas hijacked the party!"
+Logout:
+  One: "%displayName &ehas logged out the server."
+  Two: "&eAfter five minutes, random players will be promoted."
+  Become: "%displayName &ehas become the party leader."
+Help-Party:
+  Command: "&aأوامر المجموعة:"
+  Help: "&e/party help &7- &bأوامر المساعدة"
+  Lang: "&e/party lang &7- &bتغيير اللغة"
+  Chat: "&e/party chat &7- &bارسال رسالة الى عضو المجموعة"
+  Invite: "&e/party invite &7- &b أرسال طلب أنضمام الى مجموعتك"
+  Leave: "&e/party leave &7- &bالخروج من المجموعة الحالية"
+  List: "&e/party list &7- &bقائمة أعضاء المجموعة"
+  Remove: "&e/party remove &7- &bأزالة اللاعب من المجموعة"
+  Warp: "&e/party warp &7- &bنقل أعضاء المجموعة الى السيرفر الحالي"
+  Accept: "&e/party accept &7- &bالموافقة على طلب الأنضمام "
+  Toggle: "&e/party toggle &7- &bحالة الموافقة على طلبات الأنضمام."
+  Disband: "&e/party disband &7- &bحذف المجموعة"
+  Promote: "&e/party promote &7- &bPromote party leader"
+  KickOffline: "&e/party kickoffline &7- &bKick offline player(s)."
+  Hijack: "&e/party hijack &7- &bHijack the party"

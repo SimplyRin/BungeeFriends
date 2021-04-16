@@ -1,0 +1,5 @@
+main: net.simplyrin.bungeefriends.Main
+name: BungeeFriends
+version: 2.4
+author: SimplyRin
+softdepend: ["LuckPerms"]

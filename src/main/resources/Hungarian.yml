@@ -1,0 +1,225 @@
+---
+#Translator: @SimplyRin_
+#Language: English
+Language: Hungarian
+#Please input the language of your country.
+#For example, in the case of Japanese, it is 日本語.
+#in the case of Chinese, it is 中文.
+DisplayLanguage: YOUR_LANGUAGE
+Ingame_Only: "&cEz a parancs csak játékban használható."
+No_Permission: "&cNincs jogosultságod, ehhez a parancshoz!"
+Hyphen: "&9&m---------------------------------------------"
+#Exceptions
+Exceptions:
+  AlreadySent: "&cMár elküldted a barát felkérést az adott játékosnak!"
+  AlreadyFriend: "&cMár barátod az adott játékos!"
+  Ignored: "&cEz a játékos hozzá lett adva a blokkolt játékosok közé!"
+  IsntOnYourFriends: "&c%targetDisplayName &cnincs a barátaid közt!"
+  CantAddYourSelf: "&cNem addhatod hozzá saját magadat a barát listádhoz!"
+  CantRemoveYourself: "&cNem tudod törölni saját magadat!"
+  NoInvited: "&cEnnek a játékosnak nem lett elküldve egy barát felkérés se! Próbáld a &e/friend add %name &cparanccsal"
+  HasntFriend: "&cEnnek a játékosnak nem lett elküldve egy barát felkérés se! Próbáld a &e/friend add %name &cparanccsal"
+  SlotLimitReached: "&cElérted a maximum barátaid számát! Kérlek törölkj egy pár barátot!"
+  RequestDeny: "&cEz a játékos kikapcsolta a barát felkéréseket!"
+  Not-Joined: "&cNem csatlakoztál a partyba!"
+  Cant-Invite-Self: "&cNem hívhatod meg saját magadat a partydba!"
+  Disable-Invite: "%targetDisplayName &ckikapcsolta a játékosok meghívását."
+  Already:
+    In: "%targetDisplayName &cmár benne van a partydban!"
+    Joined: "&cEz a játékos már csatlakozott egy partyba!"
+    Invited: "&cMár meghívtad &e%targetDisplayName-t&c!"
+  Havent-Received-Invite: "&cNem kaptál meghívást egy partyba, vagy a meghívás lejárt!"
+  Your-Self-Invite: "&cNem adhatod hozzá sajátmagadat a partydhoz!"
+  Cant-Remove-Your-Self: "&cNem tudod törölni saját magadat! Használd a /party disband parancsot!"
+  Isnt-In-Your-Party: "%targetDisplayName &cnincs benne a partydban! Elöször hívd meg!"
+#Commands
+No-Joined-The-Party: "&cEgy party tagja kell legyél hogy használni tud, ezt a parancsot!"
+Cant-Find: "&cNem található játékos ezzel a névvel: '%name'"
+Friends:
+  Join: "&8[&a+&8] &7%%displayName%% &ecsatlakozott."
+  Quit: "&8[&c-&8] &7%%displayName%% &ekilépett."
+  Server-Move: "&8[&6@&8] &7%%displayName%% &emoved to &a%%server%%&e."
+Add:
+  Usage: "&cHasználat: /friend add <player>"
+  Sent: "&eKüldtél egy barát felkérést neki: %targetDisplayName&e!"
+  5-Minutes: "&e5 percük van hogy elfogadják!"
+  Accept:
+    Prefix: "&a&l[ELFOGADÁS]&r"
+    Message: "&bKatt ide hogy elfogadd a felkérést"
+  Deny:
+    Prefix: "&c&l[ELUTASÍTÁS]&r"
+    Message: "&bKatt ide hogy elutasítsd a felkérést"
+  Ignore:
+    Prefix: "&7&l[BLOKKOLÁS]&r"
+    Message: "&bKatt ide hogy blokkold a felkérést."
+  Request:
+    Received: "&eBarát felkérés tőle: %displayName&e!"
+  Expired:
+    YourSelf: "&eA barátfelkérésed amit %targetDisplayName-nak/nek küldtél lejárt."
+    Target: "&e%displayName &7barátfelkérése lejárt."
+Remove:
+  Usage: "&cHelytelen használat! Használd a '/party remove <player> parancsot!'"
+  YourSelf: "&eTörölted %targetDisplayName-t &ea barátlistádról!"
+  Target: "&e%displayName &etötölve lett a barátlistádról!"
+  All:
+    Confirm: "&eBiztos hogy törölni szeretnéd az összes barátodat? Ha törölni szeretnéd akkor írd be a &c/f removeall confirm &eparancsot."
+    Failed: "&eHibás törlés: %uuid"
+    Done: "&eTörölve lett az összes barátod."
+Accept:
+  Usage: "&cHelytelen használat! Használd a '/party accept <player> parancsot!'"
+  YourSelf: "&aMostmár a barátod %targetDisplayName"
+  Target: "&aMostmár a barátod %displayName"
+Deny:
+  Usage: "&cHasználat: /friend deny <player>"
+  Declined: "&eElutasítottad %targetDisplayName &ebarát felkérését!"
+List:
+  DontHave:
+    One: "&eYou don't have any friends yet!"
+    Two: "&eAdd some with /friend add <player>"
+  Online: "&e%targetDisplayName &eis in a %server Server."
+  Offline: "&e%targetDisplayName &cis currently offline"
+  Page: "&6Friends (Page %%currentPage%% of %%maxPage%%)"
+  Party-List: "&aParty tagok (%size):"
+Lang:
+  Usage: "&cHelytelen használat! Használd a '/party lang <language> parancsot!'"
+  Available: "&bJelenlegi nyelvek:"
+  Update: "&aKiválasztott nyelv: &e%lang&a!"
+  Updater:
+    LastUpdate: "&aUtolsó frissítés: %data"
+    Usage: "&cHelytelen használat! &ehasználd a &c/friend lang update <language> &eparancsot"
+    NeedCheck: "&cEllenőrizd a rendelkezésre álló nyelvek listáját! (/friend lang update)"
+    Checking: "&7Frissítés ellenörzése..."
+    Failed-Connect: "&7Hiba lépett fel csatlakozáskor."
+    Unknown: "&cEz a nyelv nem található."
+    Available: "&aJelenlegi fájlok:"
+    Updated: "&a%lang nyelv frissítve lett! Kérlek inditsd újra a szervert."
+Ignore:
+  Usage:
+    Main: "&chelytelen használat! '/friend ignore <add|remove|list>'"
+    Add: "&cHelytelen használat! '/friend ignore add <player>'"
+    Remove: "&cHelytelen használat! '/friend ignore add <player>'"
+  Havent:
+    One: "&eMég nincsen blokkolt játékosod!"
+    Two: "&eHozzáadhatsz néhányat a /friend ignore add <player> parancsal "
+  Added: "&aHozzá lett adva %targetDisplayName &aa blokkolt játékosok közé."
+  AlreadyAdded: "&cMár blokkoltad ezt a játékost! Használd a &b/ignore remove Player &cparancsot hogy felold!"
+  Removed: "&aTörölted %targetDisplayName-t &aa blokkolt játékosok közül."
+  NotAdded: "&cNem blokkoltad ezt a játékost! Használd a &b/ignore add Player &cparancsot hogy blokkold!"
+Force-Add:
+  Usage: "&cHasználat: /friend force-add <player>"
+  YourSelf: "&aA barátod mostantól: %taisplayName &c&l[KÉNYSZERÍTVE]"
+  Target: "&aA barátod mostantól: %displayName &c&l[KÉNYSZERÍTVE]"
+Prefix:
+  Usage: "&cHasználat: /friend prefix <player> <prefix>"
+  Current: "&7%targetDisplayName&e jelenlegi prefixe: '%prefix&e'"
+  To: "&7%targetDisplayName&e prefix kicserélve erre: '%prefix&e'"
+Toggle:
+  Enabled: "&eParty meghívások elfogadása: &aBekapcsolva&e."
+  Disabled: "&eParty meghívások elfogadása: &cKikapcsolva&e."
+Reload:
+  Usage: "&cUsage: /friend reload <all|config|lang>"
+  Config: "&aReloaded config.yml file."
+  Prefix: "&aReloaded prefix.yml file."
+  AliasCommand: "&aReconfigured alias command."
+  Lang: "&aReloaded language files."
+Help:
+  Command: "&aParty parancsok:"
+  Help: "&e/party help &7- &bElőhozza ezt a chat ablakot"
+  Lang: "&e/party lang &7- &bNyelvet választ"
+  Add: "&e/friend add &7- &bHozzáadd egy barátot"
+  Remove: "&e/party remove &7- &bKickel egy játékost a partyból"
+  RemoveAll: "&e/friend removeall &7- &bTörli az összes barátodat."
+  Accept: "&e/party accept &7- &bElfogadja a meghívást"
+  Deny: "&e/friend deny &7- &bElutasítja a felkérést"
+  List: "&e/party list &7- &bKilistázza a party tagokat"
+  Ignore: "&e/friend ignore &7- &bKilistázza a blokkolt barátokat"
+  Force-Add: "&e/friend force-add &7- &bHozzáadd egy barátot egy másik játékoshoz."
+  Prefix: "&e/friend prefix &7- &bBeállít egy prefixet."
+  Toggle: "&e/party toggle &7- &bKi/Bekapcsolja a meghívásokat."
+  Reload: "&e/friend reload &7- &bReload the config file."
+#Tell Command
+Tell-Command:
+  Usage: "&cHasználat: /tell <player> <message>"
+  YourSelf: "&dNeki: %targetDisplayName&7: %message"
+  Target: "&dTőle: %displayName&7: %message"
+  MustBeFriends: "&cA barátod kell legyen ő: %targetDisplayName!"
+  Offline: "&c%targetDisplayName &cnem elérhető!"
+  CantSend: "&cYou can't send a message to yourself!"
+#Reply Command
+Reply-Command:
+  Usage: "&chasználat: /reply <message>"
+  Target: "&cVálaszcél: %targetDisplayName"
+Chat:
+  Usage: "&cHelytelen használat! Használd a '/party chat <message> parancsot!'"
+  ChatUsage: "&cUsage: /partychat <message>"
+  Update: "&aYou are now in the %CHANNEL% &achannel"
+  NeedInAParty: "&cYou need to be in a party to chat."
+  Channels:
+    All: "&6All"
+    Party: "&6Party"
+Invite:
+  Usage: "&cHelytelen használat! Használd a '/party invite <player> parancsot!'"
+  All-Left: "&eA partyt feloszlatták, mert az összes meghívó lejárt és minden tag kilépet."
+  Request:
+    Sent:
+      Invited: "%displayName &emeghívott %targetDisplayName &epartiába!"
+      60-Seconds: "&e60 másodperced van hogy elfogadd vagy elutasítsd a meghívót!"
+    Click-here:
+      Here: "&6Click here "
+      Accept: "&eto join! You have 60 seconds to accept."
+      Command: "Katt rám\n/party accept %name"
+      Receive: "%displayName &emeghívott hogy csatlakozz a partiához!"
+    Expired:
+      Your-Self: "&eA party meghívó %targetDisplayName &eszámára lejárt."
+      Target: "&eA party meghívás %displayName-tól/től &elejárt."
+Leave:
+  You-Left: "&aKiléptél a partyból!"
+  Player-Left: "%displayName &ekilépett a partyból."
+  NeedDisband: "&cThe party leader needs to disband the party!"
+Remove-Party:  #and Kick
+  Usage: "&cHelytelen használat! Használd a '/party remove <player> parancsot!'"
+  Member-Removed: "%targetDisplayName &akickelve lett a partyból!"
+  Me-Removed: "&eKickelve lettél a partyból %displayName &eáltal!"
+KickOffline:
+  AllOnline: "&cThere are no offline players to remove."
+Warp:
+  Summon: "&eA party vezető %displayName elteleportált oda, ahol ő van."
+  Sending: "&aSending you to %server%&a."
+Accept-Party:
+  Usage: "&cHelytelen használat! Használd a '/party accept <player> parancsot!'"
+  You-Joined: "&aCsatlakoztál %targetDisplayName &apartiába!"
+  Joined: "%displayName &acsatlakozott a partyba!"
+Toggle-Party:
+  Disabled: "&eParty invitation acceptance has been &cDisabled&e."
+  Enabled: "&eParty invitation acceptance has been &aEnabled&e."
+Disband:
+  Must-Leader: "&cA party vezetőjének kell lenned, hogy használd ezt a parancsot!"
+  Disbanded: "%displayName &efeloszlatta a partyt!"
+Promote:
+  Usage: "&cInvalid usage! '/party promote <player>'"
+  Promoted: "%displayName &ehas promoted %targetDisplayName &eto party leader!"
+Hijack:
+  Usage: "&cInvalid usage! /party hijack <player>"
+  PlayerNotJoined: "&cThis player has no party."
+  You: "&cYou hijacked the party."
+  Other: "%displayName &chas hijacked the party!"
+Logout:
+  One: "%displayName &ehas logged out the server."
+  Two: "&eAfter five minutes, random players will be promoted."
+  Become: "%displayName &ehas become the party leader."
+Help-Party:
+  Command: "&aParty parancsok:"
+  Help: "&e/party help &7- &bElőhozza ezt a chat ablakot"
+  Lang: "&e/party lang &7- &bNyelvet választ"
+  Chat: "&e/party chat &7- &bÜzenetet küld a party chatbe"
+  Invite: "&e/party invite &7- &bMeghív egy játékost a partyba"
+  Leave: "&e/party leave &7- &bKilép a partyból"
+  List: "&e/party list &7- &bKilistázza a party tagokat"
+  Remove: "&e/party remove &7- &bKickel egy játékost a partyból"
+  Warp: "&e/party warp &7- &bTeleportálja a party tagokat a vezetőhöz"
+  Accept: "&e/party accept &7- &bElfogadja a meghívást"
+  Toggle: "&e/party toggle &7- &bKi/Bekapcsolja a meghívásokat."
+  Disband: "&e/party disband &7- &bFeloszlatja a partyt"
+  Promote: "&e/party promote &7- &bPromote party leader"
+  KickOffline: "&e/party kickoffline &7- &bKick offline player(s)."
+  Hijack: "&e/party hijack &7- &bHijack the party"

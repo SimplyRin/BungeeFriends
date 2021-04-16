@@ -1,0 +1,225 @@
+---
+#Translator: @SimplyRin_
+#Language: English
+Language: Russian
+#Please input the language of your country.
+#For example, in the case of Japanese, it is 日本語.
+#in the case of Chinese, it is 中文.
+DisplayLanguage: YOUR_LANGUAGE
+Ingame_Only: "&cЭта команда доступна только в игре."
+No_Permission: "&cУ вас нет доступа к этой команде!"
+Hyphen: "&9&m---------------------------------------------"
+#Exceptions
+Exceptions:
+  AlreadySent: "&cВы уже отправляли запрос на дружбу этому человеку!"
+  AlreadyFriend: "&cВы уже дружите с этим человеком!"
+  Ignored: "&cЭтот игрок добавил вас в свой список игнорируемых пользователей!"
+  IsntOnYourFriends: "&c%targetDisplayName &cне находится в вашем списке друзей!"
+  CantAddYourSelf: "&cНельзя добавить себя в друзья!"
+  CantRemoveYourself: "&cВы не можете удалить себя!"
+  NoInvited: "&cЭтот игрок не отправлял заявку в друзья! Попробуйте &e/friend add %name"
+  HasntFriend: "&cЭтот игрок не отправлял заявку в друзья! Попробуйте &e/friend add %name"
+  SlotLimitReached: "&cВы достигли максимума друзей! Чтобы добавить больше друзей, пожалуйста, удалите лишних!"
+  RequestDeny: "&cЭтот игрок отключил возможность присылать ему запросы в друзья!"
+  Not-Joined: "&cВы не присоединились к группе!"
+  Cant-Invite-Self: "&cВы не можете себя в группу!"
+  Disable-Invite: "%targetDisplayName &cотключил прием приглашений в группу."
+  Already:
+    In: "%targetDisplayName &cнаходится в вашей группе!"
+    Joined: "&cЭтот игрок уже присоединился к группе!"
+    Invited: "&cВы уже пригласили %targetDisplayName&c!"
+  Havent-Received-Invite: "&cВы не были приглашены в группу, или срок приглашения истек!"
+  Your-Self-Invite: "&cВы не можете добавить себя в группу!"
+  Cant-Remove-Your-Self: "&cВы не можете удалить себя из группы! Используйте /party disband, чтобы распустить группу!"
+  Isnt-In-Your-Party: "%targetDisplayName &cне в вашей группе! Попробуйте пригласить ещё раз!"
+#Commands
+No-Joined-The-Party: "&cВы должны быть участником этой команды!"
+Cant-Find: "&cНевозможно найти игрока по имени '%name'"
+Friends:
+  Join: "&8[&a+&8] &7%%displayName%% присоединился."
+  Quit: "&8[&a+&8] &7%%displayName%% отключился."
+  Server-Move: "&8[&6@&8] &7%%displayName%% &emoved to &a%%server%%&e."
+Add:
+  Usage: "&cИспользуйте: /friend add <player>"
+  Sent: "&eВы отправили запрос на дружбу игроку %targetDisplayName&e!"
+  5-Minutes: "&eУ них есть 5 минут, чтобы принять это!"
+  Accept:
+    Prefix: "&a&l[ПРИНЯТЬ]&r"
+    Message: "&bНажмите, чтобы принять запрос на дружбу"
+  Deny:
+    Prefix: "&c&l[ОТКЛОНИТЬ]&r"
+    Message: "Нажмите, чтобы отклонить запрос на дружбу"
+  Ignore:
+    Prefix: "&7&l[ИГНОРИРОВАТЬ]"
+    Message: "&bНажмите, чтобы заблокировать все будущие запросы на дружбу."
+  Request:
+    Received: "&eЗапрос на дружбу от %displayName&e!"
+  Expired:
+    YourSelf: "&eВаш запрос на дружбу игроку %targetDisplayName &eистек."
+    Target: "&eЗапрос на дружбу от %displayName &eистек."
+Remove:
+  Usage: "&cНедопустимое использование! Используйте: /party remove <player>"
+  YourSelf: "&eВы удалили %targetDisplayName &eиз списка друзей!"
+  Target: "&e%displayName &eудалил вас из списка друзей!"
+  All:
+    Confirm: "&eAre you sure you want to delete all your friends? To delete it, enter &c'/f removeall confirm'&e."
+    Failed: "&eОшибка при удалении: %uuid"
+    Done: "&eDeleted all my friends."
+Accept:
+  Usage: "&cНедопустимое использование! Используйте: /party invite <player>"
+  YourSelf: "&aВы теперь друзья с %targetDisplayName"
+  Target: "&aВы теперь друзья с %displayName"
+Deny:
+  Usage: "&cИспользуйте: /friend deny <player>"
+  Declined: "&eОтклонен запрос %targetDisplayName!"
+List:
+  DontHave:
+    One: "&eYou don't have any friends yet!"
+    Two: "&eAdd some with /friend add <player>"
+  Online: "&e%targetDisplayName &eis in a %server Server."
+  Offline: "&e%targetDisplayName &cis currently offline"
+  Page: "&6Friends (Page %%currentPage%% of %%maxPage%%)"
+  Party-List: "&aИгроков в группе (%size):"
+Lang:
+  Usage: "&cНедопустимое использование! Используйте: /party lang <language>"
+  Available: "&bДоступные языки:"
+  Update: "&aВыбранный язык: &e%lang&a!"
+  Updater:
+    LastUpdate: "&aПоследнее обновление: %data"
+    Usage: "&cInvalid usage! '/friend lang update <language>'"
+    NeedCheck: "&cYou need check available languages list! (/friend lang update)"
+    Checking: "&7Проверка обновлений..."
+    Failed-Connect: "&cНе удалось подключиться к серверу."
+    Unknown: "&cЭтот язык не найден."
+    Available: "&aДоступные файлы:"
+    Updated: "&a%lang language has been updated! You may need to restart the server."
+Ignore:
+  Usage:
+    Main: "&cНедопустимое использование! Используйте: /friend ignore <add|remove|list>"
+    Add: "&cНедопустимое использование! Используйте: /friend ignore add <player>"
+    Remove: "&cНедопустимое использование! Используйте: /friend ignore add <player>"
+  Havent:
+    One: "&eУ вас еще нет никаких замечаний!"
+    Two: "&eДобавьте с помощью /friend ignore add <player>"
+  Added: "&a%targetDisplayName &eдобавлен в чёрный список."
+  AlreadyAdded: "&cВы уже добавили этого игрока в чёрный список! &b/ignore remove <player> &c, чтобы убрать его из чёрного списка!"
+  Removed: "&aУдалить %targetDisplayName &aиз чёрного списка."
+  NotAdded: "&cВы не игнорируете этого игрока! Используйте: /ignore add <player> &c, чтобы добавить в чёрный список!"
+Force-Add:
+  Usage: "&cИспользуйте: /friend force-add <player>"
+  YourSelf: "&aВы теперь друзья с %targetDisplayName &c&l[FORCE]"
+  Target: "&aВы теперь друзья с %displayName &c&l[FORCE]"
+Prefix:
+  Usage: "&cИспользуйте: /friend prefix <player> <prefix>"
+  Current: "&7%targetDisplayName &eиспользуйте префикс '%prefix&e'"
+  To: "&7%targetDisplayName&e префикс был изменен на '%prefix&e'"
+Toggle:
+  Enabled: "&eПрием приглашений в группу был &aВключен&e."
+  Disabled: "&eПрием приглашений в группу был &cВыключен&e."
+Reload:
+  Usage: "&cUsage: /friend reload <all|config|lang>"
+  Config: "&aReloaded config.yml file."
+  Prefix: "&aReloaded prefix.yml file."
+  AliasCommand: "&aReconfigured alias command."
+  Lang: "&aReloaded language files."
+Help:
+  Command: "&aКоманды группы:"
+  Help: "&e/party help &7- &bПомощь"
+  Lang: "&e/party lang &7- &bИзменить язык"
+  Add: "&e/friend add &7- &bДобавить в друзья"
+  Remove: "&e/party remove &7- &bВыгнать игрока"
+  RemoveAll: "&e/friend removeall &7- &bRemove all your friends."
+  Accept: "&e/party accept &7- &bПринять приглашение от игрока"
+  Deny: "&e/friend deny &7- &bОтклонить запрос на дружбу"
+  List: "&e/party list &7- &bКоличество игроков в группе"
+  Ignore: "&e/friend ignore &7- &bУправление чёрным списком"
+  Force-Add: "&e/friend force-add &7- &bВы будете вынуждены дружить с игроком."
+  Prefix: "&e/friend prefix &7- &bУстановить префикс."
+  Toggle: "&e/party toggle &7-&bПереключить прием приглашения."
+  Reload: "&e/friend reload &7- &bReload the config file."
+#Tell Command
+Tell-Command:
+  Usage: "&cИспользуйте: /tell <player> <message>"
+  YourSelf: "&d-> %targetDisplayName&7: %message"
+  Target: "&d<- %displayName&7: %message"
+  MustBeFriends: "&cВы должны быть друзьями с %targetDisplayName!"
+  Offline: "&e%targetDisplayName &cне в сети!"
+  CantSend: "&cYou can't send a message to yourself!"
+#Reply Command
+Reply-Command:
+  Usage: "&cИспользуйте: /reply <message>"
+  Target: "&cОтветить: %targetDisplayName"
+Chat:
+  Usage: "&cНедопустимое использование! Используйте: /party chat <message>"
+  ChatUsage: "&cИспользуйте: /partychat <message>"
+  Update: "&aВы находитесь в %CHANNEL% &aканале"
+  NeedInAParty: "&cВы должны быть в группе, чтобы общаться."
+  Channels:
+    All: "&6Общий"
+    Party: "&6Группа"
+Invite:
+  Usage: "&cНедопустимое использование Используйте: /party invite <player>"
+  All-Left: "&eГруппа была распущена, потому что все приглашения истекли, или все участники ушли."
+  Request:
+    Sent:
+      Invited: "%displayName &eпригласил %targetDisplayName &eв группу!"
+      60-Seconds: "&eУ вас есть 60 секунд, чтобы принять приглашение!"
+    Click-here:
+      Here: "&6Нажмите сюда "
+      Accept: "&6Нажмите здесь, чтобы присоединиться! У вас есть 60 секунд, чтобы принять приглашение."
+      Command: "Нажмите, чтобы запустить\n/party accept %name"
+      Receive: "%displayName &eпригласил вас в группу!"
+    Expired:
+      Your-Self: "&eПриглашение игрока %targetDisplayName &eистекло."
+      Target: "&eПриглашение игрока %displayName &eистекло."
+Leave:
+  You-Left: "&aВы покинули группу!"
+  Player-Left: "%displayName &eпокинул группу."
+  NeedDisband: "&cThe party leader needs to disband the party!"
+Remove-Party:  #and Kick
+  Usage: "&cНедопустимое использование! Используйте: /party remove <player>"
+  Member-Removed: "%targetDisplayName &aбыл удален с группы!"
+  Me-Removed: "&eВас выгнал %displayName&e!"
+KickOffline:
+  AllOnline: "&cThere are no offline players to remove."
+Warp:
+  Summon: "&eЛидер группы %displayName &eпереместил вас на сервер."
+  Sending: "&aПеренаправляем вас на %server%&a."
+Accept-Party:
+  Usage: "&cНедопустимое использование! Используйте: /party invite <player>"
+  You-Joined: "&aВы присоединились к группе %targetDisplayName&a!"
+  Joined: "%displayName &aприсоединился к группе!"
+Toggle-Party:
+  Disabled: "&eПриём приглашений в группу был &cвыключен&e."
+  Enabled: "&eПриём приглашений в группу был &aвключен&e."
+Disband:
+  Must-Leader: "&cВы должны быть лидером группы, чтобы использовать эту команду!"
+  Disbanded: "%displayName &eраспустил группу!"
+Promote:
+  Usage: "&cНедопустимое использование! Используйте: /party promote <игрок>"
+  Promoted: "%displayName &ehas promoted %targetDisplayName &eto party leader!"
+Hijack:
+  Usage: "&cInvalid usage! /party hijack <player>"
+  PlayerNotJoined: "&cЭтот игрок не состоит в группе."
+  You: "&cYou hijacked the party."
+  Other: "%displayName &chas hijacked the party!"
+Logout:
+  One: "%displayName &ehas logged out the server."
+  Two: "&eAfter five minutes, random players will be promoted."
+  Become: "%displayName &ehas become the party leader."
+Help-Party:
+  Command: "&aКоманды группы:"
+  Help: "&e/party help &7- &bПомощь"
+  Lang: "&e/party lang &7- &bИзменить язык"
+  Chat: "&e/party chat &7- &bОтправить сообщение в чат группы"
+  Invite: "&e/party invite &7- &bПригласить игрока"
+  Leave: "&e/party leave &7- &bПокинуть группу"
+  List: "&e/party list &7- &bКоличество игроков в группе"
+  Remove: "&e/party remove &7- &bВыгнать игрока"
+  Warp: "&e/party warp &7- &bПеренести игроков на свой сервер"
+  Accept: "&e/party accept &7- &bПринять приглашение от игрока"
+  Toggle: "&e/party toggle &7-&bПереключить прием приглашения."
+  Disband: "&e/party disband &7- &bРаспустить группу"
+  Promote: "&e/party promote &7- &bPromote party leader"
+  KickOffline: "&e/party kickoffline &7- &bKick offline player(s)."
+  Hijack: "&e/party hijack &7- &bHijack the party"

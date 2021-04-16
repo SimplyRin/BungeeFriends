@@ -1,0 +1,225 @@
+---
+#Translator: @SimplyRin_
+#Language: English
+Language: Japanese
+#Please input the language of your country.
+#For example, in the case of Japanese, it is 日本語.
+#in the case of Chinese, it is 中文.
+DisplayLanguage: 日本語
+Ingame_Only: "&cこのコマンドはゲーム内からのみ使用できます。"
+No_Permission: "&cあなたはこのコマンドにアクセスする権利がありません。"
+Hyphen: "&9&m---------------------------------------------"
+#Exceptions
+Exceptions:
+  AlreadySent: "&cあなたは既にプレイヤーにリクエストを送っています！"
+  AlreadyFriend: "&cあなたはすでにこのプレイヤーとフレンドです！"
+  Ignored: "&cこのプレイヤーは無視リストにあなたを追加しています！"
+  IsntOnYourFriends: "&c%targetDisplayName &cはあなたとフレンドではありません！"
+  CantAddYourSelf: "&cあなたは自身をフレンドとして追加することはできません！"
+  CantRemoveYourself: "&cあなたは自身をフレンド削除することはできません！"
+  NoInvited: "&cこのプレイヤーはあなたにフレンド申請をしていません！ &e/friend add %name &cを使用してみてください。"
+  HasntFriend: "&cこの人はあなたをフレンドに申請していません！ &e/friend add %name &cを使用してみてください。"
+  SlotLimitReached: "&cあなたは最大の友達に達しました！ もっと友達を追加するには、いくつかを削除してください！"
+  RequestDeny: "&cこのプレイヤーはフレンドリクエスト受信を無効にしています。"
+  Not-Joined: "&cあなたはパーティーに参加していません！"
+  Cant-Invite-Self: "&cあなたはあなた自身を招待することができません。"
+  Disable-Invite: "%targetDisplayName &cはパーティーの招待を無効にしています。"
+  Already:
+    In: "%targetDisplayName &cは既にあなたのパーティーに参加しています。"
+    Joined: "&cこのプレイヤーはすでにパーティーに参加しています！"
+    Invited: "&cあなたは既に %targetDisplayName &cを招待しています！"
+  Havent-Received-Invite: "&cあなたはパーティーに招待されていないか、招待の有効期限が切れています。"
+  Your-Self-Invite: "&cあなたはあなた自身に招待を送ることができません！"
+  Cant-Remove-Your-Self: "&cあなた自身を削除することはできません！代わりに /party disaband を使用してください！"
+  Isnt-In-Your-Party: "%targetDisplayName &cはあなたのパーティーに参加していません！招待してください！"
+#Commands
+No-Joined-The-Party: "&cこのコマンドを使用するには、パーティーに参加している必要があります！"
+Cant-Find: "&c'%name'の名前でプレイヤーを見つけることができませんでした。"
+Friends:
+  Join: "&8[&a+&8] &7%%displayName%% &eが参加しました。"
+  Quit: "&8[&c-&8] &7%%displayName%% が退出しました。"
+  Server-Move: "&8[&6@&8] &7%%displayName%% &eが &a%%server%% &eに移動しました。"
+Add:
+  Usage: "&c使用方法: /friend add <プレイヤー>"
+  Sent: "&eあなたは %targetDisplayName &eにフレンド申請を送信しました！"
+  5-Minutes: "&eプレイヤーは5分間招待を受け入れることができます！"
+  Accept:
+    Prefix: "&a&l[許可]&r"
+    Message: "&bクリックしてフレンドリクエストを受け入れます"
+  Deny:
+    Prefix: "&c&l[拒否]&r"
+    Message: "&bフレンドリクエストを拒否するにはクリックしてください"
+  Ignore:
+    Prefix: "&7&l[無視]"
+    Message: "&bクリックするとこれからのフレンドリクエストをブロックします"
+  Request:
+    Received: "&e%displayName &eからフレンドリクエストを受信しました！"
+  Expired:
+    YourSelf: "&e%targetDisplayName &eへのフレンドリクエストの有効期限が切れました"
+    Target: "&e%displayName &eからのフレンドリクエストの有効期限が切れました"
+Remove:
+  Usage: "&c使用方法: '/party remove <プレイヤー>'"
+  YourSelf: "&eあなたは %targetDisplayName &eを フレンドリスト から削除しました"
+  Target: "&e%displayName &eはあなたを フレンドリスト から削除しました"
+  All:
+    Confirm: "&e本当にすべてのフレンドを削除しますか？実行する場合は &c'/f remove all confirm' &eと入力してください。"
+    Failed: "&e削除に失敗しました: %uuid"
+    Done: "&eすべてのフレンドを削除しました。"
+Accept:
+  Usage: "&c使用方法: '/party accept <プレイヤー>'"
+  YourSelf: "&aあなたは %targetDisplayName &aとフレンドになりました"
+  Target: "&aあなたは %displayName &aとフレンドになりました"
+Deny:
+  Usage: "&c使用方法: /friend deny <プレイヤー>"
+  Declined: "&e%targetDisplayName &eさんからのフレンドリクエストを拒否しました"
+List:
+  DontHave:
+    One: "&eあなたはまだ誰ともフレンドになっていません！"
+    Two: "&e/friend add <プレイヤー> を使用してフレンド申請を送信することができます"
+  Online: "&e%targetDisplayName &eは現在 %server サーバーにいます"
+  Offline: "&e%targetDisplayName &cは現在オフラインです"
+  Page: "&6フレンド (%%currentPage%% / %%maxPage%%)"
+  Party-List: "&aパーティーメンバー (%size): "
+Lang:
+  Usage: "&c使用方法: '/friend lang <言語>'"
+  Available: "&b現在利用可能な言語:"
+  Update: "&a選択した言語: &e%lang&a!"
+  Updater:
+    LastUpdate: "&a最終更新日: %data"
+    Usage: "&c使用方法: '/friend lang update <language>'"
+    NeedCheck: "&cあなたは利用可能な言語リストをチェックする必要があります！(/friend lang update)"
+    Checking: "&7更新を確認しています..."
+    Failed-Connect: "&cサーバーへの接続に失敗しました。"
+    Unknown: "&cこの言語は見つかりませんでした。"
+    Available: "&a利用可能なファイル:"
+    Updated: "&a%lang 言語ファイルを更新しました！サーバーの再起動が必要になる場合があります。"
+Ignore:
+  Usage:
+    Main: "&c使用方法: /friend ignore <add|remove|list>"
+    Add: "&c使用方法: /friend ignore add <player>"
+    Remove: "&c使用方法: /friend ignore add <player>"
+  Havent:
+    One: "&eあなたはまだ誰も無視していません！"
+    Two: "&e/friend ignore add <プレイヤー> を使用して無視リストに追加することができます"
+  Added: "&aあなたの無視リストに %targetDisplayName を追加しました。"
+  AlreadyAdded: "&cあなたはすでにそのプレイヤーを無視しました！削除するには &b/ignore remove Player &cを使用してください！"
+  Removed: "&aあなたの無視リストから %targetDisplayName を削除しました。"
+  NotAdded: "&cあなたはそのプレイヤーを無視していません！無視するには &b/ignore add Player &cを使用してください！"
+Force-Add:
+  Usage: "&c使用方法: /friend force-add <プレイヤー>"
+  YourSelf: "&aあなたは %targetDisplayName とフレンドになりました &c&l[強制]"
+  Target: "&aあなたは %displayName とフレンドになりました &c&l[強制]"
+Prefix:
+  Usage: "&c使用方法: /friend prefix <プレイヤー> <プレフィックス>"
+  Current: "&7%targetDisplayName&e さんの現在のプレフィックスは '%prefix&e' です"
+  To: "&7%targetDisplayName&e さんのプレフィックスを '%prefix&e' に変更しました"
+Toggle:
+  Enabled: "&eパーティーの招待受付が &aEnabled &eになりました"
+  Disabled: "&eパーティーの招待受付が &c無効 &eになりました"
+Reload:
+  Usage: "&c使用方法: /friend reload <all|config|lang>"
+  Config: "&aconfig.yml 設定ファイルを再読込しました。"
+  Prefix: "&aprefix.yml 設定ファイルを再読込しました。"
+  AliasCommand: "&aエイリアスコマンドを再設定しました。"
+  Lang: "&a言語ファイルを再読み込みしました。"
+Help:
+  Command: "&aパーティーコマンド:"
+  Help: "&e/friend help &7- &bこのヘルプメッセージを表示します。"
+  Lang: "&e/friend lang &7- &b表示される言語を変更する"
+  Add: "&e/friend add &7- &bプレーヤーをフレンドとして追加する"
+  Remove: "&e/friend remove &7- &bフレンドからプレイヤーを削除する"
+  RemoveAll: "&e/friend removeall &7- &bすべてのフレンドを削除する"
+  Accept: "&e/friend accept &7- &bフレンドリクエストを承諾する"
+  Deny: "&e/friend deny &7- &bフレンドのリクエストを拒否する"
+  List: "&e/friend list &7- &bフレンドリストを見る"
+  Ignore: "&e/friend ignore &7- &b無視リストを管理"
+  Force-Add: "&e/friend force-add &7- &bプレイヤーと強制的にフレンドになります"
+  Prefix: "&e/friend prefix &7- &bプレーヤープレフィックスを設定する"
+  Toggle: "&e/friend toggle &7- &bフレンドリクエスト受信の切り替え"
+  Reload: "&e/friend reload &7- &b設定ファイルを再読み込みします。"
+#Tell Command
+Tell-Command:
+  Usage: "&c使用方法: /tell <プレイヤー> <メッセージ>"
+  YourSelf: "&dTo: %targetDisplayName&7: %message"
+  Target: "&dFrom: %displayName&7: %message"
+  MustBeFriends: "&c%targetDisplayName とフレンドになっている必要があります！"
+  Offline: "&c%targetDisplayName &cは現在オフラインです！"
+  CantSend: "&cあなたは、自分自身にメッセージを送信することはできません！"
+#Reply Command
+Reply-Command:
+  Usage: "&c使用方法: /reply <メッセージ>"
+  Target: "&c返信相手: %targetDisplayName"
+Chat:
+  Usage: "&c使用方法: '/party chat <メッセージ>'"
+  ChatUsage: "&c使用方法: /partychat <メッセージ>"
+  Update: "&aあなたは現在 %CHANNEL% チャンネルにいます。"
+  NeedInAParty: "&aパーティーに参加している必要があります。"
+  Channels:
+    All: "&a全て"
+    Party: "&6パーティー"
+Invite:
+  Usage: "&c使用方法: '/party invite <プレイヤー>'"
+  All-Left: "&eすべての招待状の有効期限が切れ、全員が退出したため、パーティーは解散されました。"
+  Request:
+    Sent:
+      Invited: "%displayName &eは %targetDisplayName &eをパーティーに招待しました"
+      60-Seconds: "&eプレイヤーは60秒の間招待を受け入れることができます！"
+    Click-here:
+      Here: "&cここをクリック "
+      Accept: "&eして参加できます。今から60秒間有効です。"
+      Command: "クリックすると下記のコマンドが実行されます\n/party accept %name"
+      Receive: "%displayName &eはパーティーに参加するようにあなたを招待しました！"
+    Expired:
+      Your-Self: "&e%targetDisplayName &eに招待された参加申請は期限切れです。"
+      Target: "&e%displayName &eからのパーティー招待状の有効期限が切れました。"
+Leave:
+  You-Left: "&aあなたはパーティーを退出しました！"
+  Player-Left: "%displayName &eがパーティーを退出しました"
+  NeedDisband: "&cパーティーリーダー場合はパーティーを解散させる必要があります！"
+Remove-Party:  #and Kick
+  Usage: "&c使用方法: '/party remove <プレイヤー>'"
+  Member-Removed: "&eあなたのパーティーから %targetDisplayName &aがキックされました。"
+  Me-Removed: "&eあなたは %displayName &eによってパーティーからキックされました！"
+KickOffline:
+  AllOnline: "&cオフラインのプレイヤーはいません。"
+Warp:
+  Summon: "&eパーティーリーダーの %displayName &eがあなたをサーバーに転送しました。"
+  Sending: "&a%server% &aに移動しています...。"
+Accept-Party:
+  Usage: "&c使用方法: '/party accept <プレイヤー>'"
+  You-Joined: "&aあなたは %targetDisplayName &aのパーティーに参加しました！"
+  Joined: "%displayName &aがパーティーに参加しました。"
+Toggle-Party:
+  Disabled: "&eパーティーの招待の受け取りが &c無効 &eになりました"
+  Enabled: "&eパーティーの招待の受け取りが &a有効 &eになりました"
+Disband:
+  Must-Leader: "&cこのコマンドを使用するにはパーティーリーダーでなければなりません！"
+  Disbanded: "%displayName &eはパーティーを解散させました！"
+Promote:
+  Usage: "&c使用方法: '/party promote <プレイヤー>'"
+  Promoted: "%displayName &eは %targetDisplayName &eによってパーティーリーダーに昇格しました。"
+Hijack:
+  Usage: "&c使用方法: /party hijack <プレイヤー>"
+  PlayerNotJoined: "&cこのプレイヤーはパーティーに参加していません。"
+  You: "&cあなたはパーティーを乗っ取りました。"
+  Other: "%displayName &cはパーティーを乗っ取りました。"
+Logout:
+  One: "%displayName &eはサーバーから退出しました。"
+  Two: "&e5分後、リーダーが選べれたプレイヤーに昇格します。"
+  Become: "%displayName &eはパーティーリーダーになりました。"
+Help-Party:
+  Command: "&aパーティーコマンド:"
+  Help: "&e/party help &7- &bこのヘルプメッセージを表示します。"
+  Lang: "&e/party lang &7- &b表示される言語を変更する"
+  Chat: "&e/party chat &7- &bパーティメンバーにメッセージを送信する"
+  Invite: "&e/party invite &7- &bあなたのパーティーにプレイヤーを招待する"
+  Leave: "&e/party leave &7- &b現在のパーティを退出する"
+  List: "&e/party list &7- &bパーティーのメンバーを一覧表示します"
+  Remove: "&e/party remove &7- &bパーティーからプレイヤーを削除する"
+  Warp: "&e/party warp &7- &bパーティーのメンバーをサーバーに移動する"
+  Accept: "&e/party accept &7- &bプレーヤーからのパーティー招待を受け入れる"
+  Toggle: "&e/party toggle &7- &b招待の受諾を切り替える"
+  Disband: "&e/party disband &7- &bパーティーを解散する"
+  Promote: "&e/party promote &7- &b他人をパーティーリーダーに昇格させます。"
+  KickOffline: "&c/party kickoffline &7- &bオフラインプレイヤーをキックします"
+  Hijack: "&e/party hijack &7- &bパーティーをハイジャックするぜ！"
