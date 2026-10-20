@@ -16,7 +16,7 @@ import net.simplyrin.bungeefriends.utils.LanguageManager.LanguageUtils;
  * Created by SimplyRin on 2020/04/30.
  *
  * author: SimplyRin
- * license: LGPL v3
+ * license: LGPL-2.1-or-later
  * copyright: Copyright (c) 2021 SimplyRin
  */
 public class ChatCommand extends Command {

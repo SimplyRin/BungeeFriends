@@ -15,7 +15,7 @@ import net.simplyrin.bungeefriends.tools.Config;
  * Created by SimplyRin on 2021/03/09.
  *
  * author: SimplyRin
- * license: LGPL v3
+ * license: LGPL-2.1-or-later
  * copyright: Copyright (c) 2021 SimplyRin
  */
 public class DataManager {
